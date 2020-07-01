@@ -2,38 +2,24 @@
     This module is resposible for receiving other modules and 
     manipulating them to render our Customer list to the DOM
 */
-import { Variety } from "./Variety";
-import { useVarieties } from "./VarietiesProvider";
+import { Variety } from "./Variety.js";
+import { getVarieties } from "./VarietiesProvider.js";
 
-const url = "https://localhost:5001/api/beanvariety/";
-
-const button = document.querySelector("#run-button");
 
 const contentTarget = document.querySelector(".varietiesContainer");
 
 const renderVarietyList = () => {
-    contentTarget.innerHTML = getVarieties().then(() => {
-        const allTheVarieties = useVarieties()
-
+    getVarieties().then((allTheVarieties) => {
         for (const variety of allTheVarieties) {
             const varietyHTML = Variety(variety)
-            return varietyHTML
+            contentTarget.innerHTML += varietyHTML
         }
     });
 };
-export const VarietyList = () => {
-    button.addEventListener("click", () => {
-        renderVarietyList();
-    });
-};
+
+const button = document.querySelector("#run-button");
 
 button.addEventListener("click", () => {
-    getAllBeanVarieties()
-        .then(beanVarieties => {
-            console.log(beanVarieties);
-        })
+    renderVarietyList()
 });
 
-function getAllBeanVarieties() {
-    return fetch(url).then(resp => resp.json());
-}

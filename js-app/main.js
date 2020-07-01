@@ -1,18 +1,2 @@
-import { VarietyList } from "../js-app/BeanVarieties/VarietiesList";
+import "./BeanVarieties/VarietiesList.js";
 
-
-// const coffeeUrl = "https://localhost:5001/api/coffee/";
-
-
-// button.addEventListener("click", () => {
-//     getAllCoffee()
-//         .then(coffee => {
-//             console.log(coffee);
-//         })
-// });
-
-// function getAllCoffee() {
-//     return fetch(coffeeUrl).then(resp => resp.json());
-// }
-
-VarietyList

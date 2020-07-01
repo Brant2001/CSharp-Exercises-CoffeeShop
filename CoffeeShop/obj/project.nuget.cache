@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M5uDaPbDCcDFHWYRYcW0cw/tZuLhRhJaJaC8++eN1QTjOqDlVrPjMn8PZ/94Y0Nwiu4T3nwtUyPrrCLXSUoefg==",
+  "dgSpecHash": "Pf5gWnfh318K4PvaYSVxCtyO9CjctCcKmfaRBwEErU4pP8wFYwm6//BhC91PAPm+lsRnVvv0JG9eE/GOmPP4yw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\brant\\workspace\\main-projects\\CoffeeShop\\CoffeeShop\\CoffeeShop.csproj",
+  "projectFilePath": "C:\\Users\\brant\\workspace\\practice-exercises\\third-book\\CoffeeShop\\CoffeeShop\\CoffeeShop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\brant\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\brant\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
